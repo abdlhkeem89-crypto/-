@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "تطبيق عبد الحكيم محمد للدراسة",
+    "slug": "abdulhakim-study-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "jsEngine": "jsc",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "package": "com.abdulhakim.studyapp",
+      "permissions": [
+        "CAMERA",
+        "READ_MEDIA_IMAGES",
+        "POST_NOTIFICATIONS"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#173F5F"
+      }
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "يحتاج التطبيق إلى الكاميرا لتصوير صفحات الدروس والملاحظات.",
+        "NSPhotoLibraryUsageDescription": "يحتاج التطبيق إلى الصور لإرفاق صفحات الدروس والملاحظات.",
+        "NSUserNotificationsUsageDescription": "يستخدم التطبيق الإشعارات لتذكيرك بالدراسة والواجبات والدروس الناقصة."
+      }
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "السماح للتطبيق باختيار صور الدروس والملاحظات."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#123c69"
+        }
+      ]
+    ],
+    "extra": {
+      "appNameArabic": "عبد الحكيم محمد"
+    },
+    "icon": "./assets/icon.png"
+  }
+}
